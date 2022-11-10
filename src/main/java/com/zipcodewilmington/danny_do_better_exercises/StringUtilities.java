@@ -59,7 +59,10 @@ public class StringUtilities {
      * @return the middle character of `inputValue`
      */
     public static Character getMiddleCharacter(String inputValue){
-        return inputValue.charAt(inputValue.length() / 2);
+        int name = inputValue.length();
+        double word2 = name/2.2;
+        int word3 = (int) word2;
+        return inputValue.charAt(word3);
     }
 
     /**
@@ -67,7 +70,7 @@ public class StringUtilities {
      * @return the first sequence of characters
      */
     public static String getFirstWord(String spaceDelimitedString){
-        String[] arr = spaceDelimitedString.split()/2;
+        String arr[] = spaceDelimitedString.split("", 2);
         return arr[0];
     }
 
@@ -76,7 +79,8 @@ public class StringUtilities {
      * @return the second word of a string delimited by spaces.
      */
     public static String getSecondWord(String spaceDelimitedString){
-
+        String arr = String.valueOf(spaceDelimitedString.split(""));
+        return null;
     }
 
     /**
